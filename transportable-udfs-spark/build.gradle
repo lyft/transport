@@ -13,13 +13,13 @@ dependencies {
     exclude module: 'jackson-module-paranamer'
   }
   compileOnly('com.fasterxml.jackson.module:jackson-module-paranamer:2.6.7')
-  testCompile(group: project.ext.'spark-group', name: 'spark-core_2.11', version: project.ext.'spark-version') {
+  testImplementation(group: project.ext.'spark-group', name: 'spark-core_2.11', version: project.ext.'spark-version') {
     exclude module: 'jackson-module-paranamer'
   }
-  testCompile(group: project.ext.'spark-group', name: 'spark-sql_2.11', version: project.ext.'spark-version') {
+  testImplementation(group: project.ext.'spark-group', name: 'spark-sql_2.11', version: project.ext.'spark-version') {
     exclude module: 'jackson-module-paranamer'
   }
-  testCompile('com.fasterxml.jackson.module:jackson-module-paranamer:2.6.7')
+  testImplementation('com.fasterxml.jackson.module:jackson-module-paranamer:2.6.7')
   testCompile project(path: ':transportable-udfs-type-system', configuration: 'tests')
 }
 

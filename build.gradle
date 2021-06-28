@@ -69,8 +69,8 @@ subprojects {
     project.apply(plugin: 'checkstyle')
 
     dependencies {
-      testCompile 'org.testng:testng:6.11'
-      testCompile 'org.slf4j:slf4j-simple:1.7.25'
+      testImplementation 'org.testng:testng:6.11'
+      testImplementation 'org.slf4j:slf4j-simple:1.7.25'
     }
 
     test {
