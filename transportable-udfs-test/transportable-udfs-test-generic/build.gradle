@@ -6,5 +6,5 @@ dependencies {
   compile project(':transportable-udfs-utils')
   compile project(":transportable-udfs-test:transportable-udfs-test-api")
   compile project(":transportable-udfs-test:transportable-udfs-test-spi")
-  compile 'org.testng:testng:6.11'
+  implementation 'org.testng:testng:6.11'
 }

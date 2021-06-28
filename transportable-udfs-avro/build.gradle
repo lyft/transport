@@ -3,8 +3,8 @@ apply plugin: 'java'
 dependencies {
   compile project(':transportable-udfs-api')
   compile project(':transportable-udfs-type-system')
-  compile('org.apache.avro:avro:1.10.2')
-  testCompile project(path: ':transportable-udfs-type-system', configuration: 'tests')
+  implementation('org.apache.avro:avro:1.10.2')
+  testImplementation project(path: ':transportable-udfs-type-system', configuration: 'tests')
 }
 
 task jarTests(type: Jar, dependsOn: testClasses) {
