@@ -12,7 +12,7 @@ dependencies {
   compile(group: project.ext.'spark-group', name: 'spark-sql_2.12', version: project.ext.'spark-version') {
     exclude module: 'jackson-module-paranamer'
   }
-  compile('com.fasterxml.jackson.module:jackson-module-scala_2.11:2.7.9')
+  compile('com.fasterxml.jackson.module:jackson-module-scala_2.12:2.7.9')
   compile 'org.testng:testng:6.11'
   compile 'org.slf4j:slf4j-simple:1.7.25'
 }
